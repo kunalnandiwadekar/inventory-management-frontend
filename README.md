@@ -16,7 +16,7 @@ A modern, responsive inventory management system with a React frontend and FastA
 - Protected routes
 - Session management
 
-### 📊 Dashboard
+### 📊 Dashboard  
 - Real-time inventory overview
 - Quick stats and insights
 - Recent activities
@@ -123,14 +123,15 @@ dist
 ## 🧭 Project Structure
 
 ```
-src/
-├── assets/          # Static assets
-├── components/      # Reusable components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── utils/           # Utility functions
-├── types/           # TypeScript type definitions
-└── App.tsx          # Main application component
+inventory-management-frontend
+├── src/
+│   ├── api/
+│   ├── pages/
+│   ├── components/
+│   └── layout/
+├── assets/
+├── package.json
+└── README.md
 ```
 
 ## 🤝 Contributing
