@@ -26,11 +26,6 @@ A modern, responsive inventory management system with a React frontend and FastA
 - Categorize products
 - Track product details (SKU, price, quantity, etc.)
 
-### 📈 Stock Management
-- Stock In/Out tracking
-- Low stock alerts
-- Stock movement history
-
 ### 📋 Reports
 - Sales reports
 - Inventory valuation
