@@ -1,73 +1,164 @@
-# React + TypeScript + Vite
+# 📦 Inventory Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive inventory management system with a React frontend and FastAPI backend. Built to help businesses efficiently track and manage their inventory, products, and suppliers.
 
-Currently, two official plugins are available:
+![Dashboard Preview](https://via.placeholder.com/800x400.png?text=Inventory+Management+Dashboard)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+- **Frontend URL:** [https://inventory-management-frontend-ax3t.onrender.com](https://inventory-management-frontend-ax3t.onrender.com)
+- **Backend API:** [https://inventory-backend-16mw.onrender.com](https://inventory-backend-16mw.onrender.com)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+### � Authentication
+- Secure login system
+- Protected routes
+- Session management
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 📊 Dashboard
+- Real-time inventory overview
+- Quick stats and insights
+- Recent activities
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📦 Product Management
+- Add, edit, and delete products
+- Categorize products
+- Track product details (SKU, price, quantity, etc.)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 📈 Stock Management
+- Stock In/Out tracking
+- Low stock alerts
+- Stock movement history
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 📋 Reports
+- Sales reports
+- Inventory valuation
+- Stock level reports
+- Export to PDF/Excel
+
+### 👥 Supplier Management
+- Manage supplier information
+- Track purchase orders
+- Supplier performance metrics
+
+## � Tech Stack
+
+### Frontend
+- ⚛️ React 18 with TypeScript
+- 🎨 Tailwind CSS for styling
+- 🚀 Vite for fast development
+- 🔄 React Router for navigation
+- 📱 Fully responsive design
+
+### Backend
+- 🐍 FastAPI
+- 🗄️ PostgreSQL database
+- 🔒 JWT Authentication
+- 🚀 Deployed on Render
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v16 or later)
+- npm or yarn
+- Git
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/kunalnandiwadekar/inventory-management-frontend.git
+   cd inventory-management-frontend
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Environment Setup**
+   Create a `.env` file in the root directory and add:
+   ```env
+   VITE_API_URL=https://inventory-backend-16mw.onrender.com
+   ```
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Build for production**
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+
+## 🔐 Demo Access
+
+Use the following credentials to test the application:
+
+- **Username:** `admin`
+- **Password:** `admin123`
+
+## 📦 Deployment
+
+The application is deployed on **Render** as a static site. The deployment is automatically triggered on pushes to the `main` branch.
+
+### Build Command
+```bash
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Publish Directory
 ```
+dist
+```
+
+## 🧭 Project Structure
+
+```
+src/
+├── assets/          # Static assets
+├── components/      # Reusable components
+├── pages/           # Page components
+├── hooks/           # Custom React hooks
+├── utils/           # Utility functions
+├── types/           # TypeScript type definitions
+└── App.tsx          # Main application component
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍� Author
+
+- **Kunal Nandiwadekar**
+- GitHub: [@kunalnandiwadekar](https://github.com/kunalnandiwadekar)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- Portfolio: [Your Portfolio](https://yourportfolio.com)
+
+## 🙏 Acknowledgments
+
+- [Vite](https://vitejs.dev/) for the amazing build tool
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+- [React Icons](https://react-icons.github.io/react-icons/) for the icon set
+- [Render](https://render.com/) for the free hosting
+
+
