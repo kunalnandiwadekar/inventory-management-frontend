@@ -2,7 +2,7 @@
 
 A modern, responsive inventory management system with a React frontend and FastAPI backend. Built to help businesses efficiently track and manage their inventory, products, and suppliers.
 
-![Dashboard Preview](https://via.placeholder.com/800x400.png?text=Inventory+Management+Dashboard)
+![Dashboard Preview](./src/assets/images)
 
 ## 🚀 Live Demo
 
