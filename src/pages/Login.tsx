@@ -9,7 +9,7 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const handleLogin = async (e: React.FormEvent) => {
+const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
     setLoading(true);
@@ -24,7 +24,9 @@ const Login = () => {
         throw new Error("Invalid credentials");
       }
 
+      const data = await res.json();
       localStorage.setItem("isLoggedIn", "true");
+      localStorage.setItem("token", data.access_token);  // ← ADD THIS LINE
       navigate("/dashboard");
     } catch (err) {
       setError("Invalid username or password");
